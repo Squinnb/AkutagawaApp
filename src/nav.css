@@ -1,0 +1,57 @@
+.currentLink {
+    border-bottom: 1px white solid;
+
+    color: white;
+}
+
+#navigation {
+    position: fixed;
+    background-color: rgba(41, 42, 44, 0.978);  
+    padding: .1rem
+}
+#navList {
+    display: flex;
+    
+}
+
+
+
+@media only screen and (min-width: 900px) {
+    #navigation {
+        width: 7rem;
+        height: 40vh;
+        position: fixed;
+        border-radius: 0 5px 30px 2px;
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+    #navigation:hover {
+        width: 13rem;
+        transition: width 400ms;
+    }
+    #navList {
+        flex-direction: column;
+    }
+    .navli {
+        margin-bottom: 1rem;
+    }
+    
+}
+
+@media only screen and (max-width: 900px) {
+    #navigation {
+        top: 0;
+        width: 100vw;
+        height: 4rem;
+        border-radius: 0 0 50px 5px;
+        border-bottom: 1px solid black;
+    }
+    .nl {
+        margin: 1rem;
+    }
+
+    main{
+        margin-left: 0;
+        margin-top: 7rem
+    }
+}
